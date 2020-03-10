@@ -17,7 +17,7 @@
     "@cloudflare/workers-types": "^1.0.1",
     "@types/jest": "^24.0.23",
     "@types/node": "^13.9.0",
-    "babel-jest": "^25.2.1",
+    "babel-jest": "^25.1.0",
     "eslint": "^6.8.0",
     "eslint-plugin-shopify": "^35.0.0",
     "jest": "^24.9.0",
@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "@shopify/network": "^1.4.6",
+    "@slack/bolt": "^1.7.0",
     "babel-preset-shopify": "^21.0.0",
     "serverless-cloudflare-workers": "^1.2.0"
   },

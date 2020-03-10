@@ -18,7 +18,7 @@ export class Worker {
   }
 }
 
-self.addEventListener('fetch', (event: Event) => {
+self.addEventListener('fetch', async (event: Event) => {
   console.log(event);
   const worker = new Worker();
 
