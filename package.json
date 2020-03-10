@@ -1,35 +1,36 @@
 {
   "name": "status-app",
   "version": "0.0.0",
-  "description": "Shopify status page slack integration",
+  "description": "Shopify status page slack integration.",
   "main": "src/index.ts",
   "scripts": {
     "lint": "eslint .",
     "test": "jest",
     "build": "webpack --progress --mode production",
     "dev": "webpack --progress --mode none",
-    "p": "yarn run build && wrangler preview",
+    "p": "yarn run dev && wrangler preview",
     "deploy": "yarn run build && wrangler publish"
   },
   "author": "Matthew Seccafien <matt.seccafien@shopify.com>",
   "license": "ISC",
   "devDependencies": {
+    "@cloudflare/workers-types": "^1.0.1",
+    "@types/jest": "^24.0.23",
+    "@types/node": "^13.9.0",
+    "babel-jest": "^25.2.1",
     "eslint": "^6.8.0",
     "eslint-plugin-shopify": "^35.0.0",
-    "typescript": "^3.8.3",
-    "@types/node": "^13.9.0",
-    "@types/jest": "^24.0.23",
-    "@udacity/types-service-worker-mock": "^1.1.0",
-    "cloudflare-worker-mock": "^1.1.0",
     "jest": "^24.9.0",
+    "jest-transform-graphql": "^2.1.0",
     "prettier": "^1.19.1",
-    "ts-jest": "^24.2.0",
     "ts-loader": "^6.2.1",
-    "types-cloudflare-worker": "^1.1.0",
+    "typescript": "^3.8.3",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
   },
   "dependencies": {
+    "@shopify/network": "^1.4.6",
+    "babel-preset-shopify": "^21.0.0",
     "serverless-cloudflare-workers": "^1.2.0"
   },
   "eslintConfig": {
